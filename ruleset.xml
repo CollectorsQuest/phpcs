@@ -24,7 +24,7 @@
     <rule ref="Generic.Functions.CallTimePassByReference"/>
     <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
     
-    <rule ref="Symfony.Classes.OnePerFile"/>
+    <rule ref="CollectorsQuest.Classes.OnePerFile"/>
     <rule ref="Squiz.Objects.ObjectMemberComma"/>
     <rule ref="Squiz.PHP.Eval"/>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
