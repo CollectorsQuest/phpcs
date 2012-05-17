@@ -1,23 +1,14 @@
 <?php
-/**
- * Squiz_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff.
- *
- * PHP version 5
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
- * @author Leszek Prabucki <leszek.prabucki@gmail.com>
- */
 
 /**
- * Squiz_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff.
+ * CollectorsQuest_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff.
  *
  * Checks that arguments in function declarations are spaced correctly.
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
  */
-class Symfony_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff implements PHP_CodeSniffer_Sniff
+class CollectorsQuest_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff implements PHP_CodeSniffer_Sniff
 {
 
 

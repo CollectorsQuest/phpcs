@@ -1,25 +1,16 @@
 <?php
-/**
- * Symfony_Sniffs_NamingConventions_ValidVariableNameSniff.
- *
- * PHP version 5
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
- * @author    Leszek Prabucki <leszek.prabucki@gmail.com>
- */
 
 if (class_exists('PHP_CodeSniffer_Standards_AbstractVariableSniff', true) === false) {
     throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_Standards_AbstractVariableSniff not found');
 }
 
 /**
- * Symfony_Sniffs_NamingConventions_ValidVariableNameSniff.
+ * CollectorsQuest_Sniffs_NamingConventions_ValidVariableNameSniff.
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
  */
-class Symfony_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniffer_Standards_AbstractVariableSniff
+class CollectorsQuest_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniffer_Standards_AbstractVariableSniff
 {
 
     /**

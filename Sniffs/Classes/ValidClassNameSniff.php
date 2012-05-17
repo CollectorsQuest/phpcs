@@ -1,21 +1,14 @@
 <?php
-/**
- * Symfony_Sniffs_Classes_ValidClassNameSniff.
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
- * @author    Leszek Prabucki <leszek.prabucki@goyello.com>>
- */
 
 /**
- * Symfony_Sniffs_Classes_ValidClassNameSniff.
+ * CollectorsQuest_Sniffs_Classes_ValidClassNameSniff.
  *
  * Ensures classes are in camel caps, and the first letter is capitalised
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
  */
-class Symfony_Sniffs_Classes_ValidClassNameSniff implements PHP_CodeSniffer_Sniff
+class CollectorsQuest_Sniffs_Classes_ValidClassNameSniff implements PHP_CodeSniffer_Sniff
 {
     public $classNamePattern = '/^[a-zA-Z0-9]+$/';
 

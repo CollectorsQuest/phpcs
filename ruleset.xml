@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="symfony">
-    <description>The Symfony 1.x coding standard.</description>
+<ruleset name="CollectorsQuest">
+    <description>The CollectorsQuest.com coding standard.</description>
 
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>    
@@ -14,7 +14,7 @@
     <rule ref="Symfony2.WhiteSpace.DiscourageFitzinator"/>
     <rule ref="Squiz.Scope.MemberVarScope"/>
     
-    <rule ref="Symfony.Classes.ValidClassName">
+    <rule ref="CollectorsQuest.Classes.ValidClassName">
       <properties>
          <property name="classNamePattern" value="/^gy[A-Z]{1}[a-zA-Z0-9]+$/"/>
       </properties>
@@ -28,9 +28,9 @@
     <rule ref="Squiz.Objects.ObjectMemberComma"/>
     <rule ref="Squiz.PHP.Eval"/>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
-    <rule ref="Symfony.Functions.FunctionDeclarationArgumentSpacing"/>
+    <rule ref="CollectorsQuest.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="Symfony.NamingConventions.ValidVariableName"/>
+    <rule ref="CollectorsQuest.NamingConventions.ValidVariableName"/>
     <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
     <rule ref="Squiz.Scope.MethodScope"/>
 

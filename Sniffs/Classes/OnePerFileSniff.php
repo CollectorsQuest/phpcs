@@ -1,21 +1,14 @@
 <?php
-/**
- * Symfony_Sniffs_Classes_OnePerFileSniff.
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
- * @author    Leszek Prabucki <leszek.prabucki@goyello.com>>
- */
 
 /**
- * Symfony_Sniffs_Classes_OnePerFileSniff.
+ * CollectorsQuest_Sniffs_Classes_OnePerFileSniff.
  *
- * Ensures classes are in camel caps, and the first letter is capitalised
+ * Ensures classes are in camel caps, and the first letter is capitalized
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
  */
-class Symfony_Sniffs_Classes_OnePerFileSniff implements PHP_CodeSniffer_Sniff
+class CollectorsQuest_Sniffs_Classes_OnePerFileSniff implements PHP_CodeSniffer_Sniff
 {
     /**
      * Returns an array of tokens this test wants to listen for.
