@@ -1,50 +1,56 @@
 <?xml version="1.0"?>
 <ruleset name="CollectorsQuest">
-    <description>The CollectorsQuest.com coding standard.</description>
+    <description>The CollectorsQuest.com coding standard</description>
 
-    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
-    <rule ref="Generic.PHP.DisallowShortOpenTag"/>    
-    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
-    <rule ref="Generic.WhiteSpace.ScopeIndent">
-      <properties>
-         <property name="indent" value="2"/>
-      </properties>
-    </rule>
-    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
-    <rule ref="Symfony2.WhiteSpace.DiscourageFitzinator"/>
+		<!-- Exclude Directories -->
+	  <exclude-pattern>*/templates/*</exclude-pattern>
+	  <exclude-pattern>*/base/*</exclude-pattern>
+	  <exclude-pattern>*/Base*</exclude-pattern>
+	  <exclude-pattern>/cache/*</exclude-pattern>
+	  <exclude-pattern>/log/*</exclude-pattern>
+
+		<rule ref="CollectorsQuest.ControlStructures.ControlSignature"/>		
+		<rule ref="Symfony2.WhiteSpace.DiscourageFitzinator"/>
+		
+		<rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
+    <rule ref="Squiz.Classes.LowercaseClassKeywords"/>
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
+    <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
+    <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
+		<rule ref="Squiz.Objects.ObjectMemberComma"/>
     <rule ref="Squiz.Scope.MemberVarScope"/>
-    
-    <rule ref="CollectorsQuest.Classes.ValidClassName">
-      <properties>
-         <property name="classNamePattern" value="/^gy[A-Z]{1}[a-zA-Z0-9]+$/"/>
-      </properties>
-    </rule>
-    
-    <rule ref="Generic.Formatting.SpaceAfterCast"/>
-    <rule ref="Generic.Functions.CallTimePassByReference"/>
-    <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
-    
-    <rule ref="CollectorsQuest.Classes.OnePerFile"/>
-    <rule ref="Squiz.Objects.ObjectMemberComma"/>
-    <rule ref="Squiz.PHP.Eval"/>
-    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
-    <rule ref="CollectorsQuest.Functions.FunctionDeclarationArgumentSpacing"/>
-    <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="CollectorsQuest.NamingConventions.ValidVariableName"/>
-    <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
     <rule ref="Squiz.Scope.MethodScope"/>
+		<rule ref="Squiz.Scope.MethodScope"/>
+		<rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/>
+		<rule ref="Squiz.PHP.Eval"/>
 
+		<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+		<rule ref="Generic.Functions.CallTimePassByReference"/>
+    <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+    <rule ref="Generic.PHP.LowerCaseConstant"/>
+
+		<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+	    <properties>
+	      <property name="indent" value="2"/>
+	    </properties>
+	  </rule>
+    
     <rule ref="Generic.Files.LineLength">
-      <properties>
-         <property name="lineLimit" value="100"/>
-         <property name="absoluteLineLimit" value="120"/>
-      </properties>
+        <properties>
+            <property name="lineLimit" value="100"/>
+            <property name="absoluteLineLimit" value="120"/>
+        </properties>
     </rule>
- 
+    
     <rule ref="Generic.Files.LineEndings">
-      <properties>
-         <property name="eolChar" value="\n"/>
-      </properties>
-    </rule>
-
+	    <properties>
+	      <property name="eolChar" value="\n"/>
+	    </properties>
+	  </rule>
+    
+    <rule ref="Zend.Files.ClosingTag"/>
 </ruleset>
