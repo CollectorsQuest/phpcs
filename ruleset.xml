@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="CollectorsQuest">
-    <description>The CollectorsQuest.com coding standard</description>
+    <description>The CollectorsQuest.com Coding Standard</description>
 
 		<!-- Exclude Directories -->
 	  <exclude-pattern>*/templates/*</exclude-pattern>
@@ -10,7 +10,6 @@
 	  <exclude-pattern>/log/*</exclude-pattern>
 
 		<rule ref="CollectorsQuest.ControlStructures.ControlSignature"/>		
-		<rule ref="Symfony2.WhiteSpace.DiscourageFitzinator"/>
 		
 		<rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
     <rule ref="Squiz.Classes.LowercaseClassKeywords"/>
@@ -40,17 +39,11 @@
 	  </rule>
     
     <rule ref="Generic.Files.LineLength">
-        <properties>
-            <property name="lineLimit" value="100"/>
-            <property name="absoluteLineLimit" value="120"/>
-        </properties>
+      <properties>
+        <property name="lineLimit" value="100"/>
+        <property name="absoluteLineLimit" value="120"/>
+      </properties>
     </rule>
-    
-    <rule ref="Generic.Files.LineEndings">
-	    <properties>
-	      <property name="eolChar" value="\n"/>
-	    </properties>
-	  </rule>
     
     <rule ref="Zend.Files.ClosingTag"/>
 </ruleset>
