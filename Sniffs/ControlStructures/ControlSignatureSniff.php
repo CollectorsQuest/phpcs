@@ -54,9 +54,11 @@ class CollectorsQuest_Sniffs_ControlStructures_ControlSignatureSniff extends PHP
           'while (...);EOL',
           'while (...)EOL',
           'for (...)EOL',
+          'if (...): EOL',
           'if (...)EOL',
           'foreach (...)EOL',
           '}EOLelse if (...)EOL',
+          ' else: EOL',
           '}EOLelseEOL',
         );
 
